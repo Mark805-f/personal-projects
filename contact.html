@@ -3,45 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us - Voyage Elite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="Navbar">
-            <div class="logo">
-                <img src="images/visily-container.png">
-                <span>Vayage Travel Co.</span>
-            </div>
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/destinations">Destinations</a></li>
-            <li><a href="/booking">Booking</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-        <button class="book-now">Book Now</button>
-        </nav>
-    </header>
-    <section class="main-index">
-        <div class="main-index-background"></div>
 
-        <div class="main-index-content">
-            <h1 class="main-index-title">
-                Escape the <span class="Ordinary">Ordinary</span>
-            </h1>
-            <p class="main-index-description">
-            Discover hand-picked destinations around the world. We craft personalized journeys 
-            that turn travel dreams into lifelong memories.
-            </p>
-
-            <div class="main-index-buttons">
-                <button class="btn-primary">Explore Destination</button>
-                <button class="btm-secondary"><i class="fa-play"></i>Watch Video</button>
-            </div>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">V</span>
+                Voyage <span>Elite</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <div class>
-    </section>
+    </nav>
 
+    <section class="section">
+        <h2 class="section-title heading-font">Get in Touch</h2>
+        <div style="max-width:700px; margin:0 auto; text-align:center;">
+            <p style="font-size:1.3rem; margin-bottom:2rem;">Our travel experts are ready to craft your dream journey.</p>
+            
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:2rem; margin-top:3rem;">
+                <div>
+                    <i class="fas fa-phone fa-2x" style="color:var(--primary);"></i>
+                    <h3>+1 (555) 123-4567</h3>
+                    <p>24/7 Travel Support</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope fa-2x" style="color:var(--primary);"></i>
+                    <h3>hello@voyageelite.com</h3>
+                    <p>Response within 4 hours</p>
+                </div>
+            </div>
+
+            <form style="margin-top:3rem;">
+                <input type="text" placeholder="Your Name" required style="width:100%; padding:15px; margin:10px 0; border-radius:12px;">
+                <input type="email" placeholder="Email Address" required style="width:100%; padding:15px; margin:10px 0; border-radius:12px;">
+                <textarea placeholder="Tell us about your dream trip..." rows="5" style="width:100%; padding:15px; margin:10px 0; border-radius:12px;"></textarea>
+                <button type="submit" onclick="event.preventDefault(); alert('Inquiry received! We will contact you soon.')" 
+                        style="padding:16px 40px; background:var(--primary); color:white; border:none; border-radius:9999px; font-size:1.1rem;">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
 
 </body>
 </html>
